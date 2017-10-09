@@ -44,6 +44,27 @@ Creating a bootable USB Ubuntu installer can be done using Rufus, using these in
 ## Steps CUDA:
 -> https://pjreddie.com/darknet/install/#cuda
 Main Downdload ( Deb Local ) from --> https://developer.nvidia.com/cuda-downloads
+Main Steps from http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html are: 
+
+    * `sudo dpkg -i cuda-repo-ubuntu1604-9-0-local_9.0.176-1_amd64.deb`
+    * `sudo apt-key add /var/cuda-repo-<version>/7fa2af80.pub`
+    * `sudo apt-get update`
+    * `sudo apt-get install cuda`
+Then add fresh intalled Cuda9.0 folder (/usr/local/cuda-9.0/bin) to PATH environtment, ref --> http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html ( 7.1.1. Environment Setup )
+
+To add this path to the PATH variable:
+
+    $ export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+
+In addition, when using the runfile installation method, the LD_LIBRARY_PATH variable needs to contain /usr/local/cuda-9.0/lib64 on a 64-bit system:
+
+    To change the environment variables for 64-bit operating systems:
+    $ export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64\
+                             ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+Read more at: http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#ixzz4v3XBIfiC
+Follow us: @GPUComputing on Twitter | NVIDIA on Facebook
+
 
 ## To install Opencv: 
 -> http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html (Cloning the GIT Version)
@@ -53,7 +74,8 @@ Main Downdload ( Deb Local ) from --> https://developer.nvidia.com/cuda-download
 * At darknet (Makefile), change the 2nd line of the Makefile to read:
 OPENCV=1
 
-* You're done! To try it out, first re-make the project. Then use the imtest routine to test image loading and displaying:
+* Re-make the project. Then use the imtest routine to test image loading and displaying:
 ./darknet imtest data/eagle.jpg
 
+### Almost done! Remember to download and set the proper weights
 
