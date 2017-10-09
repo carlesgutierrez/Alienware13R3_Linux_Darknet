@@ -48,9 +48,9 @@ Main Downdload ( Deb Local ) from --> https://developer.nvidia.com/cuda-download
 ## To install Opencv: 
 -> http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html (Cloning the GIT Version)
 
-#### Finally follow next steps from Darknet Tutorial for Opencv https://pjreddie.com/darknet/install/#cuda : 
+#### Remember to do the Final step https://pjreddie.com/darknet/install/#cuda : 
 
-* Next, change the 2nd line of the Makefile to read:
+* At darknet (Makefile), change the 2nd line of the Makefile to read:
 OPENCV=1
 
 * You're done! To try it out, first re-make the project. Then use the imtest routine to test image loading and displaying:
