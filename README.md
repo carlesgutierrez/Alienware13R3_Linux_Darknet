@@ -77,5 +77,9 @@ OPENCV=1
 * Re-make the project. Then use the imtest routine to test image loading and displaying:
 ./darknet imtest data/eagle.jpg
 
-### Almost done! Remember to download and set the proper weights
+or
+
+./darknet detector demo cfg/coco.data cfg/yolo.cfg yolo.weights <video file>
+
+Download proper weights from YOLO --> https://pjreddie.com/darknet/yolo/
 
