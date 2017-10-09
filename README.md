@@ -1,11 +1,12 @@
 # Alienware13R3_Linux_Darknet
 This steps will allow you to: 
-- Use only Nvidia Graphic Card
-- Install Cuda9
-- Install Opencv3.3.0
-- Use Darknet examples
+* Use only Nvidia Graphic Card
+* Install Cuda9
+* Install Opencv3.3.0
+* Use Darknet examples
 
-##1rs Prepare your Laptop Allows to Install Linux: Follow Main Steps here: 
+-----------------------------------------------------------------------
+### 1rs Prepare your Laptop Allows to Install Linux: Follow Main Steps here: 
 
 Preparation
 BIOS
@@ -32,15 +33,27 @@ Creating a bootable USB Ubuntu installer can be done using Rufus, using these in
 
 ----------------------------------------------------------------------
 
-##2nd
+### 2nd
 
-//Download and Proceed to install Ubuntu 16.04.3
+#### Download and Proceed to install Ubuntu 16.04.3
 
  - Do not add 3rth Libraries
  - Once is installed-> using Alternatives Drivers -> set Nvidia and Apply Changes
  - Restart and Check that option keeps selected. ( if yes -> Nvidia is working) 
 
-// To Use CUDA follow Darknet steps :https://pjreddie.com/darknet/install/#cuda
+## Steps CUDA:
+-> https://pjreddie.com/darknet/install/#cuda
 Main Downdload ( Deb Local ) from --> https://developer.nvidia.com/cuda-downloads
 
-// To Use OPENCV --> http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html ( GIT Version )
+## To install Opencv: 
+-> http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html (Cloning the GIT Version)
+
+#### Finally follow next steps from Darknet Tutorial for Opencv https://pjreddie.com/darknet/install/#cuda : 
+
+* Next, change the 2nd line of the Makefile to read:
+OPENCV=1
+
+* You're done! To try it out, first re-make the project. Then use the imtest routine to test image loading and displaying:
+./darknet imtest data/eagle.jpg
+
+
