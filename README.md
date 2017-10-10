@@ -6,8 +6,9 @@ This steps will allow you to:
 * Use Darknet examples
 
 -----------------------------------------------------------------------
-### 1rs Prepare your Laptop Allows to Install Linux: Follow Main Steps here: 
-
+### 1rs 
+#### Prepare your Laptop for a dual boot: 
+##### Ref: https://github.com/andrewwakeling/alienware-13-r3-ubuntu-16.04
 Preparation
 BIOS
 
@@ -29,7 +30,7 @@ It is recommended that you have Windows 10 installed first. If you need to reins
 Installing Windows 10 is easy. Simply create a bootable USB using the Windows 10 Media Creation Tool. Get the drivers from Dell's website and get it all working.
 Ubuntu installer
 
-Creating a bootable USB Ubuntu installer can be done using Rufus, using these instructions.
+Creating a bootable USB Ubuntu installer can be done using Rufus... 
 
 ----------------------------------------------------------------------
 
