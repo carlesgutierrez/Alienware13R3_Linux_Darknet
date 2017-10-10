@@ -96,6 +96,11 @@ With a grayscale video 640x480:
 * YOLOv2_VOC2007+2012.weights --> 28 Fps
  ./darknet detector demo cfg/voc.data cfg/yolo-voc.cfg YOLOv2_VOC2007+2012.weights VideoTestTrackingPeople.mov
 
+----------------------------------------------------------------------------------------
+
+For some developments you might need to install: cudnn. Look to install using the tgz file -->  cudnn-9.0-linux-x64-v7.tgz
+ref: https://developer.nvidia.com/cudnn
+
 
 
 
