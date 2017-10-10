@@ -88,9 +88,11 @@ Download proper weights from YOLO --> https://pjreddie.com/darknet/yolo/
 
 Results: 
 
-With a sample Video 640x480: 
+With a grayscale video 640x480: 
 
 * YOLOv2_608x608.weights --> 12 Fps
+
+./darknet detector demo cfg/coco.data cfg/yolo.cfg YOLOv2_608x608.weights VideoTestTrackingPeople.mov
 
 
 
