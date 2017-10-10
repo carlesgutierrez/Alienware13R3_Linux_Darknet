@@ -84,3 +84,13 @@ or
 
 Download proper weights from YOLO --> https://pjreddie.com/darknet/yolo/
 
+---------------------------------------------------------------------------------------
+
+Results: 
+
+With a sample Video 640x480: 
+
+* YOLOv2_608x608.weights --> 12 Fps
+
+
+
