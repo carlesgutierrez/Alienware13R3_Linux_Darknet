@@ -91,8 +91,11 @@ Results:
 With a grayscale video 640x480: 
 
 * YOLOv2_608x608.weights --> 10-12 Fps
-
 ./darknet detector demo cfg/coco.data cfg/yolo.cfg YOLOv2_608x608_COCO_trainval.weights VideoTestTrackingPeople.mov
+
+* YOLOv2_VOC2007+2012.weights --> 28 Fps
+ ./darknet detector demo cfg/voc.data cfg/yolo-voc.cfg YOLOv2_VOC2007+2012.weights VideoTestTrackingPeople.mov
+
 
 
 
