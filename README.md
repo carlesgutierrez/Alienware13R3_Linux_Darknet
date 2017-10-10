@@ -86,7 +86,7 @@ Download proper weights from YOLO --> https://pjreddie.com/darknet/yolo/
 
 ---------------------------------------------------------------------------------------
 
-Results: 
+YOLOV2 tests: 
 
 With a grayscale video 640x480: 
 
