@@ -98,8 +98,10 @@ With a grayscale video 640x480:
 
 ----------------------------------------------------------------------------------------
 
-For some developments you might need to install: cudnn. Look to install using the tgz file -->  cudnn-9.0-linux-x64-v7.tgz
+For some developments you might need to install: cudnn. Look to install using the tgz file --> cudnn-9.0-linux-x64-v7.tgz
 ref: https://developer.nvidia.com/cudnn
+
+or: libcudnn7_7.0.3.11-1+cuda9.0_amd64.deb and libcudnn7-dev_7.0.3.11-1+cuda9.0_amd64.deb
 
 
 
